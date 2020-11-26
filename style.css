@@ -1,15 +1,21 @@
 .container {
-    width: 90%;
+    width: 90%; /* ！！！！！!!!!!!!!!!!!!*/
     max-width: 900px;
-    margin: 0 auto;
-    justify-content: space-between;
+    margin: 0 auto;/*居中 设置居中必须要先设置max-width*/
+    
+    
+    /*text-align: center;*/
 }
-.container-nav{
+.container-flex
+{
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
 
 }
-@media (max-width: 675px) {
-    .container-nav
+/*@media (max-width: 675px) {
+    .container-flex
     {
         flex-direction: column;
 
@@ -19,14 +25,34 @@
         text-align: center;
     }
     
+*/
+@media (min-width: 675px) 
+{
+    .container-flex
+    {
+        flex-direction: row;
+    }
+
+    main {
+
+        width: 75%;
+    }
+    
+    .sidebar {
+        width: 20%; 
+    }
+
 
 }
 header {
-    /*text-align: center;*/
+    text-align: center;
     background-color: #ffebebf3;
     padding: 2rem 0;
 }
-
+img {
+    display: block;
+    width: 100%;
+}
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0; 
@@ -48,6 +74,18 @@ h1{
    
 }
 
+a 
+{
+    color: rgb(204, 90, 90);
+    font-weight: 400;
+}
+
+a :hover, 
+a :focus 
+{
+    color: rgb(94, 89, 89);
+}
+
 /* nav title*/
 .subtitle
 {
@@ -67,9 +105,33 @@ h1{
     font-size: .875rem;
 }
 
-.article-readmore {
-    color: orange;
+.article-info
+{
+    margin: 2em 0;
 }
+
+.article-readmore {
+    color: rgb(255, 94, 82);
+    font-weight: 700;
+}
+
+.article-readmore:hover,
+.article-readmore:focus
+{
+    color: rgb(167, 0, 0);
+}
+
+
+/*main {
+
+    width: 75%;
+}
+
+aside {
+    width: 20%;
+
+}
+*/
 
    
 nav ul {
@@ -130,4 +192,14 @@ nav a:focus{
 .current-page:hover {
 
     color: #707070;
+}
+
+/* article */
+
+.article-featured 
+{
+    border-bottom: 1pt #707070 solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
 }
