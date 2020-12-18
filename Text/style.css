@@ -27,7 +27,7 @@
     }
     
 */
-@media (min-width: 675px) 
+@media (min-width: 675em) 
 {
     .container-flex
     {
@@ -115,7 +115,7 @@ a :focus
 }
 
 .article-readmore {
-    color: rgb(255, 94, 82);
+    color:  rgb(204, 90, 90);
     font-weight: 700;
 }
 
@@ -150,7 +150,7 @@ nav ul {
     
 
 }
-@media (max-width: 675px) {/*展现以下样式的最大宽度为675px,大于这个宽度后，样式会自动变回默认的样式（之前定义的样式）*/
+@media (max-width: 675em) {/*展现以下样式的最大宽度为675px,大于这个宽度后，样式会自动变回默认的样式（之前定义的样式）*/
     nav ul
     {
         flex-direction: column;
