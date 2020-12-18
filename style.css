@@ -146,7 +146,7 @@ nav ul {
     
 
 }
-@media (max-width: 675px) {
+@media (max-width: 675px) {/*展现以下样式的最大宽度为675px,大于这个宽度后，样式会自动变回默认的样式（之前定义的样式）*/
     nav ul
     {
         flex-direction: column;
@@ -201,5 +201,34 @@ nav a:focus{
     border-bottom: 1pt #707070 solid;
     padding-bottom: 2em;
     margin-bottom: 2em;
+
+}
+.recent
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+
+}
+
+.article-recent-main
+{
+    order:2;
+
+}
+.article-recent-secondary
+{
+    order:1;
+}
+
+@media(min-width:700px){/*展示下面这些样式的最小宽度为700px，比700px小了就会变回默认值*/
+
+    .article-recent-main{
+        margin-top: -2.5em;
+
+    }
+    .article-info{
+        text-align: right;
+    }
 
 }
