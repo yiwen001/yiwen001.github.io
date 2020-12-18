@@ -115,7 +115,7 @@ a :focus
 }
 
 .article-readmore {
-    color:  rgb(204, 90, 90);
+    color: rgb(255, 94, 82);
     font-weight: 700;
 }
 
@@ -244,17 +244,15 @@ nav a:focus{
 .sidebar
 {
     padding-left: 10%;
-  
+    border-color: #ffebebf3;
+box-shadow: #707070;
+
+border-radius: 0.2em;
+
    
 }
-
-.card
+.widget-title
 {
-
-border-style: solid;
-border-color: rgb(243, 243, 243);
-border-width: 0.2em;
-
-
+    text-align: center;
 }
 
