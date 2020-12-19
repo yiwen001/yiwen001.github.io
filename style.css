@@ -261,3 +261,11 @@ border-width: 0.2em;
 }
 
 */
+.widget-body,
+.card
+{
+    border-bottom: 1pt #d3d2d2 solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    
+}
