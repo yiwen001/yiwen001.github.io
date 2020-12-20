@@ -54,7 +54,6 @@ header {
 img {
     display: block;
     width: 100%;
-    height: 100%;
 }
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -99,7 +98,6 @@ a :focus
     font-size: 1rem;
     margin: 0;
 }
-
 .article-title {
     
     font-size: 1.5rem;
@@ -117,7 +115,7 @@ a :focus
 }
 
 .article-readmore {
-    color: rgb(255, 94, 82);
+    color:  rgb(204, 90, 90);
     font-weight: 700;
 }
 
@@ -168,6 +166,12 @@ nav ul {
         flex-direction: column;
     }
     */
+    .sidebar{
+        order: 1;
+    }
+    main {
+        order: 2;
+    }
     
 }
 
@@ -232,7 +236,7 @@ nav a:focus{
     order:1;
 }
 
-@media(min-width:700px){/*展示下面这些样式的最小宽度为700px，比700px小了就会变回默认值*/
+@media(min-width:300px){/*展示下面这些样式的最小宽度为700px，比700px小了就会变回默认值*/
 
     .article-recent-main{
         margin-top: -2.5em;
@@ -246,15 +250,28 @@ nav a:focus{
 .sidebar
 {
     padding-left: 10%;
-    border-color: #ffebebf3;
-box-shadow: #707070;
-
-border-radius: 0.2em;
-
+  
    
 }
-.widget-title
+
+/*
+
+.card
 {
-    text-align: center;
+
+border-style: solid;
+border-color: rgb(243, 243, 243);
+border-width: 0.2em;
+
+
 }
 
+*/
+.widget-body,
+.card
+{
+    border-bottom: 1pt #d3d2d2 solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    
+}
