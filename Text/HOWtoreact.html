@@ -3,19 +3,9 @@
 <head>
     <link href="http://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
-    <script>
-        function password(){
-        var p = prompt("Input the Password","");
-        if(p!='123456'){
-        alert('Wrong Password!');
-        return false;
-        }else{
-        alert("Yes!");
-        return true;
-        }
-        }
-        </script>
 </head>
 <body>
 
@@ -24,16 +14,15 @@
         <div class= "site-title">
             <h1>Blog of Yiweenn Gao</h1>
                 <p class="subtitle">
-                    A blog sharing my studying&Life</p>           
+                    A blog sharing my studying&Life</p>   
+                    
         </div>
         <nav>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="aboutme.html">About</a></li>
-                <li><a class="current-page" href="/Text/Blog.html">Blog</a></li>    
-                <li><a href="video.html">Video</a></li>   
-            
-
+                <li><a  href="/Text/Blog.html">Blog</a></li>    
+                <li><a class="current-page" href="/Text/video.html">Video</a></li>   
             </ul>
         </nav>   
         
@@ -41,33 +30,20 @@
     </header>   
     <div class="container container-flex">
         <main role="main">
-        <article class="article-featured">
-        <h2>链接</h2>
-        <ol>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li>
-                <a href="https://github.com/ywgaoo/LeetCode-ywyw/blob/main/%E9%A2%98%E7%9B%AE.md">LeetCode刷题记录</a>
-                
-            </li>
-            <li><a href="/Text/20210116.html"  onclick="return password();">20210116</a></li>
-            <li><a href="/pdf/HOW to configu.pdf">How to configure</a></li>
-            <li><a href="/pdf/React Componen.pdf">React Component</a></li>
-            
-        </ol>
-
-         </article>
-           
-
+       <article class="article-featured">
+         <p>Graduation Video</p>
+        <div class="video">
+         <iframe href="/pdf/HOW to configu.pdf"> how to react</iframe>
+         </div>
+       </article>
         </main>
-
+        
 
         <aside class="sidebar" >
             <div class="sidebar-widget">
-            
+
                 <h2 class="widget-title" >About me</h2>
                 <img src="img/me2.jpg" alt="cute cutie" class="widget-image">
-               
-
                 <p class="widget-body" style="text-align: center;">A jobless wanderer</p>
                 <div class="card">
                 <p><strong>Github主页:</strong><a href="https://github.com/ywgaoo">ywgaoo</a></p>
@@ -84,10 +60,7 @@
                 <div class="widget-rencent-post">
                     <h3 class="widget-rencent-title">
                         <a href="aboutme.html">About Me</a>
-                     
-                    </h3>
-                    <h3 class="widget-rencent-title">
-                    <a href="/Text/20210116.html">关于笔记20210116</a>
+                        <a href="video.html">Graduation Video</a>
                     </h3>
                     <img src="" alt="" class="widget-image"> 
                 </div>
