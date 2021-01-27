@@ -4,7 +4,18 @@
     <link href="http://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
- 
+    <script>
+        function password(){
+        var p = prompt("Input the Password","");
+        if(p!='123456'){
+        alert('Wrong Password!');
+        return false;
+        }else{
+        alert("Yes!");
+        return true;
+        }
+        }
+        </script>
 </head>
 <body>
 
@@ -36,7 +47,7 @@
                 <a href="https://github.com/ywgaoo/LeetCode-ywyw/blob/main/%E9%A2%98%E7%9B%AE.md">LeetCode刷题记录</a>
                 
             </li>
-            <li><a href="/Text/20210116.html">20210116</a></li>
+            <li><a href="/Text/20210116.html"  onclick="return password();">20210116</a></li>
             
         </ol>
 
